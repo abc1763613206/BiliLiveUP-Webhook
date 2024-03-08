@@ -1,0 +1,19 @@
+limit: 15
+streamers:
+  /opt/bililive/Work/<relativepath>:
+    copyright: 2
+    source: "https://live.bilibili.com/<roomid>"
+    tid: <tid> # 投稿分区
+    cover: "" # 视频封面
+    title: "[录播][<username>][<fulldate>]<title>"
+    desc_format_id: 0
+    desc: "来自B站主播：@<username> \n当日直播间标题：<title>\n[边录边传工作流绝赞测试中，出现问题请及时在评论区反馈]\n切片逻辑：按直播间标题更改切片。"
+    dolby: 0 # 杜比音效
+    lossless_music: 0 # Hi-Res
+    dynamic: "#自动上传#"
+    subtitle:
+      open: 0
+      lan: ""
+    tag: "biliup,直播录像,自动上传"
+    dtime: ~
+    open_subtitle: true

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "bililive-hook",
+    "execute-command": "/opt/bililive/Hooks/hook.sh",
+    "command-working-directory": "/opt/bililive/Hooks/",
+    "include-command-output-in-response": false,
+    "parse-parameters-as-json": [
+      {
+        "source": "payload",
+        "name": "payload"
+      }
+    ],
+    "pass-environment-to-command": 
+		[
+            {
+                "envname": "EVENT_TYPE",
+                "source": "payload",
+                "name": "EventType"
+            },
+            {
+                "envname": "username",
+                "source": "payload",
+                "name": "EventData.Name"
+            },
+            {
+              "envname": "roomid",
+              "source": "payload",
+              "name": "EventData.RoomId"
+            },
+            {
+              "envname": "title",
+              "source": "payload",
+              "name": "EventData.Title"
+            },
+            {
+              "envname": "parent_area_id",
+              "source": "payload",
+              "name": "EventData.AreaNameParent"
+            },
+            {
+              "envname": "child_area_id",
+              "source": "payload",
+              "name": "EventData.AreaNameChild"
+            },
+            {
+              "envname": "relative_fpath",
+              "source": "payload",
+              "name": "EventData.RelativePath"
+            }
+        ]
+  }
+]

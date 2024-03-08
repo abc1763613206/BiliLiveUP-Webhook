@@ -1,0 +1,29 @@
+{
+	"version": 3,
+	"global": {
+		"CuttingByTitle": {
+			"HasValue": true,
+			"Value": true
+		},
+		"RecordDanmaku": {
+			"HasValue": true,
+			"Value": true
+		},
+		"RecordDanmakuGift": {
+			"HasValue": true,
+			"Value": true
+		},
+		"FileNameRecordTemplate": {
+			"HasValue": true,
+			"Value": "{{ roomId }}_{{ name }}/{{ \"now\" | time_zone: \"Asia/Shanghai\" | format_date: \"yy_MM_dd\" }}/{{ \"now\" | time_zone: \"Asia/Shanghai\" | format_date: \"yyyyMMdd-HHmmss\" }}-{{ title }}.flv"
+		},
+		"WebHookUrlsV2": {
+			"HasValue": true,
+			"Value": "http://127.0.0.1:9080/hooks/bililive-hook"
+		},
+		"DanmakuTransport": {
+			"HasValue": true
+		}
+	},
+	"rooms": []
+}
