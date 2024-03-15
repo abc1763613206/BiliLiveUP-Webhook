@@ -74,7 +74,7 @@ if [[ "$uploadstate" == "initial" ]]; then
             \"send_to_group\": $groupid,
             \"content\": \"在初次上传的过程中发生致命的上传错误，请检查日志！\"
         }"
-        echo "no" > /opt/bililive/Hooks/Meta/RecState/$roomid/uploaded.info
+#        echo "no" > /opt/bililive/Hooks/Meta/RecState/$roomid/uploaded.info
     fi
 else
     echo "主播 [$username]($roomid) 已尝试上传录像，无需初始化上传"
